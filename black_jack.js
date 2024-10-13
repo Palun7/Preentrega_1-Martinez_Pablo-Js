@@ -8,19 +8,23 @@ if (nombre != "" && nombre != null){
             if (click === 5) {
                 let opcion = prompt("para sumar 5 puntos, ¿Cuantos satelites naturales tiene la tierra?(apreta cancelar para finalizar)");
                 if (opcion == "1") {
-                    alert("Acertaste, sumaste 5 puntos.")
+                    alert("Acertaste, sumaste 5 puntos.");
                     click += 5;
                 }
                 else if (opcion === null) {
                     break;
                 }
+                else if (opcion == "") {
+                    alert("Sumaste un punto.");
+                    click += 1;
+                }
                 else{
-                    alert("Calculo que solo querias sumar un punto.")
+                    alert("Sabías que la luna es el único satelite natural de la tierra, ¿no? Igual te doy un puntito.");
                     click += 1;
                 }
             }
             else if (click === 11){
-                let opcion = prompt("para sumar 3 puntos, ¿Cuánto es la mitad de 550?(apreta cancelar para finalizar)")
+                let opcion = prompt("para sumar 3 puntos, ¿Cuánto es la mitad de 550?(apreta cancelar para finalizar)");
                 if (opcion == "275") {
                     alert("Acertaste, sumaste 3 puntos.");
                     click += 3;
@@ -28,22 +32,30 @@ if (nombre != "" && nombre != null){
                 else if (opcion === null) {
                     break;
                 }
+                else if (opcion == "") {
+                    alert("Sumaste un punto");
+                    click += 1;
+                }
                 else {
-                    alert("Solo voy a decir que sumaste un punto.");
+                    alert("Hay que practicar mas las matemáticas, igual te sumo un punto.");
                     click += 1;
                 }
             }
             else if (click === 15){
                 let opcion = prompt("para sumar 5 puntos, ¿cuantos meses tienen 28 días?(apreta cancelar para finalizar)");
                 if (opcion == "12") {
-                    alert("Acertaste, sumaste 5 puntos.")
+                    alert("Acertaste, sumaste 5 puntos.");
                     click += 5;
                 }
                 else if (opcion === null) {
                     break;
                 }
+                else if (opcion == "") {
+                    alert("Sumaste un punto.");
+                    click += 1
+                }
                 else {
-                    alert("Creo que te voy a sumar un solo punto.")
+                    alert("Amm... Todos los meses tienen 28 dias. Igual te regalo un punto.");
                     click += 1;
                 }
             }
@@ -68,8 +80,8 @@ if (nombre != "" && nombre != null){
     }
 }
 else if (nombre === null) {
-    alert("Veo que no queres jugar, nos vemos pronto.")
+    alert("Veo que no queres jugar, nos vemos pronto.");
 }
 else {
-    alert("Debes colocar un nombre, recargá la página.")
+    alert("Debes colocar un nombre, recargá la página.");
 }
