@@ -60,11 +60,11 @@ if (nombre != "" && nombre != null){
 
     let resultado = black_jack();
     if (resultado > 21) {
-        alert(`Diste ${resultado} clicks, te pasaste...`);
+        alert(`Sumaste ${resultado} puntos, te pasaste...`);
     }else if (resultado < 21) {
-        alert(`Diste ${resultado} clicks, te falto un poco...`);
+        alert(`Sumaste ${resultado} puntos, te falto un poco...`);
     }else {
-        alert(`Diste ${resultado} clicks, BLACKJACK!`);
+        alert(`Sumaste ${resultado} puntos, BLACKJACK!`);
     }
 }
 else if (nombre === null) {
